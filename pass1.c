@@ -106,3 +106,24 @@ void main()
     char label[10],opcode[10],operand[10],code[10],mnemonic[10];
     passOne(label,opcode,operand,code,mnemonic);
 }
+
+##input1.txt
+
+**	START	2000
+**	LDA	FIVE
+**	STA	ALPHA
+** 	LDCH 	CHARZ
+** 	STCH 	C1
+ALPHA 	RESW 	2
+FIVE 	WORD 	5
+CHARZ 	BYTE 	C'Z'
+C1 	RESB 	1
+** 	END	**
+
+##optab.txt
+
+LDA 03
+STA	0f
+LDCH	53
+STCH	57
+END	*
